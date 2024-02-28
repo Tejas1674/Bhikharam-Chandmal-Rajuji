@@ -1,0 +1,9 @@
+.full-height-section {
+	height: 70vh;
+	overflow: hidden; /* Optional: Prevent vertical scrolling if content exceeds viewport height */
+}
+
+.full-height-section .row {
+	height: 100%;
+	color: #51957e;
+}
