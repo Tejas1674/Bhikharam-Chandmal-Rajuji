@@ -100,7 +100,7 @@
 	// Populate testimonial carousel
 	$.each(testimonials, function (index, testimonial) {
 		var item = $("<div>").addClass(
-			"testimonial-item img-border-radius bg-light rounded p-4"
+			"testimonial-item img-border-radius bg-transparent rounded p-4"
 		);
 		var positionRelative = $("<div>").addClass("position-relative");
 		var quoteIcon = $("<i>")
@@ -115,10 +115,10 @@
 		var authorInfo = $("<div>").addClass(
 			"d-flex align-items-center flex-nowrap"
 		);
-		var imageWrapper = $("<div>").addClass("bg-secondary rounded");
+		var imageWrapper = $("<div>").addClass("bg-transparent rounded");
 		var img = $("<img>")
 			.attr("src", testimonial.image)
-			.addClass("img-fluid rounded")
+			.addClass("img-fluid  rounded-circle")
 			.css({ width: "100px", height: "100px" })
 			.attr("alt", "");
 		var textWrapper = $("<div>").addClass("ms-4 d-block");
@@ -137,8 +137,8 @@
 		}
 
 		// Appending elements to build the structure
-		contentWrapper.append(message);
 		imageWrapper.append(img);
+		contentWrapper.append(message);
 		textWrapper.append(authorName, authorTitle, starWrapper);
 		authorInfo.append(imageWrapper, textWrapper);
 		positionRelative.append(quoteIcon, contentWrapper, authorInfo);
