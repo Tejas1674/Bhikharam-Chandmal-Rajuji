@@ -11,6 +11,20 @@
 	};
 	spinner(0);
 
+	document.querySelectorAll(".nav-pills a").forEach(function (element) {
+		element.addEventListener("click", function (event) {
+			event.preventDefault();
+			var targetTab = document.querySelector(event.target.getAttribute("href"));
+			var activeTab = document.querySelector(".tab-pane.active");
+			if (activeTab) {
+				activeTab.classList.remove("active", "show");
+			}
+			if (targetTab) {
+				targetTab.classList.add("active", "show");
+			}
+		});
+	});
+
 	// Fixed Navbar
 	$(window).scroll(function () {
 		if ($(window).width() < 992) {
