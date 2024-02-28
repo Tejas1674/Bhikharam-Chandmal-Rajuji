@@ -51,28 +51,28 @@ nav .btn-circle {
 
 nav .nav-link {
 	color: rgb(240, 32, 32);
-	font-family: "Oswald", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
 }
-nav .nav-item:active {
+/* nav .nav-item:active {
 	color: var(--color-quaternary);
 	font-family: "Oswald", sans-serif;
 	font-optical-sizing: auto;
 	box-shadow: 0 0 10px #d68d5c;
 	border-radius: 15px;
 	background: #dc92926f;
-}
-nav .nav-link:hover {
+} */
+/* nav .nav-link:hover {
 	color: #d68d5c;
 	font-family: "Oswald", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
-	/* border: #14094d63 1px solid; */
+	border: #14094d63 1px solid;
 	box-shadow: 0 0 10px #d68d5c;
 	border-radius: 15px;
 	background: #dc92926f;
-}
+} */
 
 @media (max-width: 672px) {
 	.navs {
